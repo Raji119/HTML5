@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Design</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background-color: lightgrey;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction:row;
+            height: 500px;
+            align-items:center;
+            /*align items is for main axis it has value flex-end,flex-start and center*/
+            justify-content: space-evenly;
+            /*justify content is for cross axix it has same value as in main axis and some extra like space-ariund etc*/
+        }
+        .container h1{
+            background: linear-gradient(45deg,blueviolet,deeppink);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin: 10px;
+        }
+        #parent{
+            background-color: grey;
+            padding: 15px;
+        }
+        .child{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+            width:200px;
+            display:inline-block;
+            text-align: center;
+            box-shadow: 0 0 10px black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="parent">
+        <h1 class="child">R</h1>
+        <h1 class="child">A</h1>
+        <h1 class="child">J</h1>
+        <h1 class="child">I</h1>
+    </div>
+</body>
+</html>
